@@ -1,0 +1,14 @@
+<!-- COCKTAILS -->
+<h1>Cocktail's list:</h1>
+<div class="container d-flex flex-wrap">
+  <% @cocktails.each do |cocktail| %>
+    <!-- <div class="col-4"> -->
+      <div class="card-cocktail text-center">
+        <%= url = "../../assets/images/#{cocktail.name}.jpeg" %>
+        <img src="" alt="">
+        <h3> <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </h3>
+      </div>
+    <!-- </div> -->
+  <% end %>
+</div>
+
