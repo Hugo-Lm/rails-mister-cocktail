@@ -4,6 +4,8 @@
   <% @cocktails.each do |cocktail| %>
     <!-- <div class="col-4"> -->
       <div class="card-cocktail text-center">
+        <%= cl_image_tag("Cosmopolitan_laiahh.jpg",
+              width: 300, height: 200, crop: :fill) %>
         <h3> <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </h3>
       </div>
     <!-- </div> -->
