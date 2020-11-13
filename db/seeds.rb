@@ -19,3 +19,7 @@ ingredients["drinks"].each do |ingredient|
 end
 
 puts "ingredients créés"
+
+puts "création des cocktails"
+cocktailsNew = Cocktail.create([{name: "Caipirinha"}, {name: "Mojito"}, {name: "Cosmopolitan"},{name: "Tequila"}])
+puts "cocktails créé"

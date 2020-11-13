@@ -4,8 +4,6 @@
   <% @cocktails.each do |cocktail| %>
     <!-- <div class="col-4"> -->
       <div class="card-cocktail text-center">
-        <%= url = "../../assets/images/#{cocktail.name}.jpeg" %>
-        <img src="" alt="">
         <h3> <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </h3>
       </div>
     <!-- </div> -->
