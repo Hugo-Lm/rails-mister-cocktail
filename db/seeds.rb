@@ -23,3 +23,7 @@ puts "ingredients créés"
 puts "création des cocktails"
 cocktailsNew = Cocktail.create([{name: "Caipirinha"}, {name: "Mojito"}, {name: "Cosmopolitan"},{name: "Tequila"}])
 puts "cocktails créé"
+
+puts "Création des doses"
+dosesNew = Dose.create([{description: "3l", ingredient_id: 12, cocktail_id: 1}, {description: "2cl", ingredient_id: 28, cocktail_id: 1}])
+puts "doses créées"
