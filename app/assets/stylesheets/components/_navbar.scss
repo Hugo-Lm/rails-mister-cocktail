@@ -1,28 +1,45 @@
 .my-navbar {
-  height: 150px;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1557844352-826f0cd4f848?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80');
+  display: flex;
   color: white;
-  background-position: top;
-  background-size: cover;
-  .logo {
-    font-family: $logo-font;
-    font-size: 3em;
-    color: #55C1FF;
-    text-decoration: underline;
-    padding-top: 30px;
-    padding-left: 50px;
-    // margin-bottom: 30px;
-  }
-  .btn-navbar {
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-    background-color: #3598dc;
-    border-radius: 5px;
-    margin-left: 20px;
-    &:hover {
-      text-decoration: none;
-      background-color: #55C1FF;
-    }
-  }
+  justify-content: space-between;
+  padding: 15px 15px;
+  background-color: white;
+  // box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, .2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left-navbar {
+  display: flex;
+   align-items: center;
+}
+
+.search-display > form{
+  display:flex;
+  align-items: center;
+}
+
+.index-search-bar {
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 22px;
+  width: 400px;
+}
+
+.search-btn {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.logo {
+  width: 115px;
+}
+
+.burger-menu {
+  width:2em;
+  height:2em;
 }

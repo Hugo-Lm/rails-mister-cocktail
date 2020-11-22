@@ -1,16 +1,21 @@
 <!-- COCKTAILS -->
-<div class="container">
-  <div class="row">
-    <div class="col-12">
+<div class="container cocktail-body mw-60">
+  <div class="row mt-5">
       <% @cocktails.each do |cocktail| %>
-        <div class="card-cocktail text-center">
+        <div class="col-5 card-cocktail">
           <% if cocktail.photo.present? %>
-            <%= cl_image_tag cocktail.photo.key, height: 200, width: 300, crop: :fill %>
+            <%= cl_image_tag cocktail.photo.key, class:"card-img" %>
           <% end %>
-          <h3> <%= link_to cocktail.name, cocktail_path(cocktail.id) %> </h3>
+          <div class="cocktail-description">
+            <h3> <%= link_to cocktail.name, cocktail_path(cocktail.id), class:"cocktail-name"%> </h3>
+            <ul class="ingredient-list">
+              <% cocktail.doses.each do |dose| %>
+                <li><%= dose.description %> <%= dose.ingredient.name %></li>
+              <% end %>
+            </ul>
+          </div>
         </div>
       <% end %>
-    </div>
   </div>
 </div>
 
