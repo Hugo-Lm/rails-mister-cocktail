@@ -4,9 +4,8 @@
   // width: 300px;
   height: 200px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  margin-bottom: 40px;
   display: flex;
-  padding: 8px;
+  padding: 12px;
   background-color: white;
   &:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.4);
@@ -31,4 +30,26 @@
   font-size: 12px;
 }
 
+.cocktail-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  font-size: 1em;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  p {
+    margin: 0 !important;
+    padding-left: 5px;
+  }
+}
 
+.bi-clock {
+  margin-top: 4px;
+}
+
+.cocktail-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
